@@ -79,3 +79,9 @@ function checkGuess() {
 
     firstAttempt = false;
 }
+
+//Alert for Contact page
+function response(event){
+  event.preventDefault();
+  alert('Thank you very contacting us');
+}
