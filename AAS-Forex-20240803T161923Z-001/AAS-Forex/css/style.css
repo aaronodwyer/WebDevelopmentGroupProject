@@ -14,25 +14,42 @@ h1,h2,h3,h4,h5,th {
 
 }
 
-/*Styles the h1 tags in header - Seamus*/
-.page-header {
-  font-size: 34px;
-  color: #3577ff;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
 
- 
+
 /*gives page body a background colour -all*/
 body {
   background-color: #f7f7f7
 }
 
 
-/*** Navbar styling - - Seamus ***/
+/*** Header and Navbar - Seamus ***/
+
+/*tried a number of things to get the company header to stack on top of the bootstrap navbar, solution was here: https://stackoverflow.com/questions/25142270/put-div-class-on-top-of-navbar-bootstrap
+not perfect, but seems to work
+*/
+.company-header {
+  width: 100%;
+  z-index: 1021;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.company-header h1 {
+  font-size: 28px;
+  margin: 0;
+  color: #3577ff;
+}
+
+/* tagline */
+.company-header p {
+  margin: 0;
+  font-size: 16px;
+  color: #2b2d42;
+}
+
 
 /*styles page navbar*/
 .navbar-styling {
@@ -64,7 +81,18 @@ body {
 
 }
 
+/*Styles the h2 tags in header - Seamus*/
+.page-header {
+  font-size: 34px;
+  color: #3577ff;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
 
+ 
 
 /*Home Page Specific styles-AOD*/
 
@@ -344,9 +372,10 @@ label {
   font-size: 20px;
 }
 
-/* styles text in font-awesome content*/
+/* styles text next to icons */
 .fa-text-styling {
   font-family: "Roboto", sans-serif;
+  color: white;
   margin-left: 5px
 }
 
